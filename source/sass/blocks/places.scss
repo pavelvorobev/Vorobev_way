@@ -1,0 +1,187 @@
+.places {
+  padding-top: 199px;
+  padding-bottom: 489px;
+  background: url('../../img/map.png') no-repeat center 1800px;
+
+  @media (max-width: $width-desktop) {
+    background: none;
+    padding-top: 80px;
+    padding-bottom: 0;
+  }
+
+  @media (max-width: $width-tablet) {
+    padding-top: 306px;
+  }
+}
+
+.places__header {
+  position: relative;
+  width: 358px;
+  margin-top: 0;
+  margin-bottom: 64px;
+
+  @include fontMeasure(600, 55px, 89px);
+
+  @media (max-width: $width-desktop) {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+
+    @include fontMeasure(600, 30px, 45px);
+  }
+
+  @media (max-width: $width-tablet) {
+    @include fontMeasure(600, 24px, 36px);
+  }
+
+  &::after {
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    content: '';
+    width: 229px;
+    height: 4px;
+    background-color: $color-orange-light;
+
+    @media (max-width: $width-desktop) {
+      display: none;
+    }
+  }
+}
+
+.places__description {
+  margin-bottom: 56px;
+
+  @include fontMeasure(400, 16px, 28px);
+
+  @media (max-width: $width-desktop) {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  @media (max-width: $width-tablet) {
+    margin-bottom: 20px;
+  }
+
+}
+
+.places__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @include reset-list;
+
+  @media (max-width: $width-desktop) {
+    padding: 0 81px;
+    margin-bottom: 98px;
+  }
+
+  @media (max-width: $width-tablet) {
+    padding: 0;
+    margin-bottom: 40px;
+    justify-content: center;
+  }
+}
+
+.places__overlay {
+  position: absolute;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(20, 21, 23, 0.6);
+  z-index: 1;
+
+  a {
+    display: block;
+    padding: 30px 25px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    color: $color-white;
+
+    @include fontMeasure(500, 14px, 17px);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+}
+
+.places__item {
+  position: relative;
+  width: 350px;
+  height: 430px;
+  margin: 0 0 101px 0;
+
+  @media (max-width: $width-desktop) {
+    width: 288px;
+    height: 425px;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: $width-tablet) {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 35px;
+  }
+
+  &:hover {
+    .places__overlay {
+      display: flex;
+    }
+  }
+
+  &--greece {
+    background: #467193 url('../../img/greece-bg.jpg') no-repeat 0 -110px;
+  }
+
+  &--albania {
+    background: #25696f url('../../img/albania-bg.jpg') no-repeat;
+  }
+
+  &--macedonia {
+    background: #c59275 url('../../img/macedonia-bg.jpg') no-repeat;
+  }
+
+  &--montenegro {
+    margin-left: 175px;
+    background: #72a34f url('../../img/montenegro-bg.jpg') no-repeat;
+
+    @media (max-width: $width-desktop) {
+      margin-left: 0;
+    }
+
+    @media (max-width: $width-tablet) {
+      margin-left: 5%;
+    }
+  }
+
+  &--croatia {
+    margin-right: 175px;
+    background: #05c7a6 url('../../img/croatia-bg.jpg') no-repeat;
+
+    @media (max-width: $width-desktop) {
+      margin: 0 auto;
+    }
+
+    @media (max-width: $width-tablet) {
+      margin: 0 5%;
+    }
+  }
+}
+
+.places__name {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 215px;
+  height: 61px;
+  margin: 0;
+  padding-top: 16px;
+
+  @include fontMeasure(500,  24px, 29px);
+  color: $color-black-light;
+  transform: translateX(-50%);
+  text-align: center;
+  background-color: $color-white;
+  box-sizing: border-box;
+}

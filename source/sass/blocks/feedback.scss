@@ -1,0 +1,149 @@
+.feedback {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  @media (max-width: $width-desktop) {
+    width: 100%;
+    height: 415px;
+  }
+}
+
+.feedback__image {
+  text-align: left;
+
+  @media (max-width: $width-desktop) {
+    width: 1023px;
+    height: 415px;
+    object-fit: cover;
+  }
+
+  @media (max-width: $width-tablet) {
+    /* height: 425px; */
+  }
+}
+
+.feedback__content {
+  position: absolute;
+  bottom: 50%;
+  transform: translateY(50%);
+  right: 0;
+  width: 382px;
+  padding: 30px;
+  box-sizing: border-box;
+  background-color: $color-white;
+
+  @media (max-width: $width-desktop) {
+    bottom: -20px;
+    transform: none;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: 0;
+  }
+
+  @media (max-width: $width-tablet) {
+    bottom: -50px;
+    width: 268px;
+  }
+}
+
+.feedback__header {
+  position: relative;
+  margin: 0 0 32px 0;
+
+  @include fontMeasure(500, 30px, 36px);
+
+  @media (max-width: $width-tablet) {
+    margin-bottom: 31px;
+    text-align: center;
+
+    @include fontMeasure(500, 20px, 24px);
+  }
+
+  &::after {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    content: '';
+    width: 68px;
+    height: 1px;
+    background-color: $color-orange-light;
+
+    @media (max-width: $width-tablet) {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+.feedback__description {
+  margin-bottom: 35px;
+
+  @include fontMeasure(400, 14px, 28px);
+  color: rgba(44, 46, 63, 0.7);
+
+  @media (max-width: $width-tablet) {
+    margin-bottom: 68px;
+    text-align: center;
+  }
+}
+
+.feedback__author {
+  position: relative;
+  padding-left: 54px;
+
+  @include fontMeasure(500, 16px, 19px);
+  color: $color-black-light;
+
+  @media (max-width: $width-tablet) {
+    padding: 0;
+    text-align: center;
+  }
+
+  &::before {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    content: '';
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+
+    @media (max-width: $width-tablet) {
+      top: -48px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &--greece {
+    &::before {
+      background: url('../../img/feedback-author-1.jpg') center;
+    }
+  }
+
+  &--albania {
+    &::before {
+      background: url('../../img/feedback-author-2.jpg') center;
+    }
+  }
+
+  &--macedonia {
+    &::before {
+      background: url('../../img/feedback-author-3.jpg') center;
+    }
+  }
+
+  &--montenegro {
+    &::before {
+      background: url('../../img/feedback-author-4.jpg') center;
+    }
+  }
+
+  &--croatia {
+    &::before {
+      background: url('../../img/feedback-author-5.jpg') center;
+    }
+  }
+}

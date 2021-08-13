@@ -1,0 +1,62 @@
+.travels {
+  padding-right: 39px;
+  border-right: 1px solid #D7D9DF;
+
+  @media (max-width: $width-desktop) {
+    margin-left: 21px;
+  }
+
+  @media (max-width: $width-tablet) {
+    grid-row: 1 / 2;
+    padding: 70px 20px 0 20px;
+    margin-left: 0;
+    border-right: none;
+    border-bottom: 1px solid #D7D9DF;
+  }
+}
+
+.travels__title {
+  margin-bottom: 20px;
+
+  @include fontMeasure(600, 18px, 32px);
+  color: $color-black-dark;
+}
+
+.travels__countries {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: $width-tablet) {
+    flex-wrap: wrap;
+    width: 249px;
+    margin: 0 auto;
+  }
+}
+
+.travels__list {
+  @include reset-list;
+
+  &--center {
+    @media (max-width: $width-tablet) {
+      width: 100%;
+    }
+  }
+}
+
+.travels__item {
+  margin-bottom: 10px;
+
+  @include fontMeasure(400, 14px, 17px);
+
+  a {
+    color: rgba($color-black-dark, 0.5);
+
+    &:hover {
+      color: $color-orange-light;
+    }
+
+    &:active, &:focus {
+      color: rgba($color-orange-light, 0.7);
+    }
+  }
+}

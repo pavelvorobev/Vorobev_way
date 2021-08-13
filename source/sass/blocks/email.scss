@@ -1,0 +1,27 @@
+.email {
+  display: flex;
+  margin-bottom: 15px;
+  align-items: center;
+  color: $color-black-dark;
+
+  @media (max-width: $width-tablet) {
+    justify-content: center;
+  }
+
+  &:hover {
+    svg path {
+      stroke: $color-orange-light;
+    }
+  }
+}
+
+.email__icon {
+  margin-right: 15px;
+}
+
+.email__address {
+  text-decoration: underline;
+
+  @include fontMeasure(400, 14px, 17px);
+  color: $color-orange-light;
+}

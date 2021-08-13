@@ -1,0 +1,31 @@
+.phone {
+  display: flex;
+  align-items: center;
+  color: $color-black-dark;
+
+  @media (max-width: $width-desktop) {
+    display: none;
+  }
+
+  &:hover {
+    color: $color-orange-light;
+
+    svg path {
+      stroke: $color-orange-light;
+    }
+  }
+
+  &:active {
+    color: rgba($color-orange-light, 0.7);
+
+    svg path {
+      stroke: rgba($color-orange-light, 0.7);
+    }
+  }
+}
+
+.phone__number {
+  text-decoration: underline;
+
+  @include fontMeasure(400, 18px, 36px);
+}

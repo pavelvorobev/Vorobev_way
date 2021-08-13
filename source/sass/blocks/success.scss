@@ -1,0 +1,22 @@
+.success {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 728px;
+  height: 444px;
+  background-color: $color-gray;
+
+  @media (max-width: $width-tablet) {
+    width: 288px;
+    height: 500px;
+  }
+}
+
+.success__title {
+  @include fontMeasure(500, 25px, 43px);
+  text-align: center;
+
+  @media (max-width: $width-tablet) {
+
+  }
+}

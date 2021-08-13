@@ -1,0 +1,19 @@
+.page-footer__wrapper {
+  display: grid;
+  padding-bottom: 81px;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  @media (max-width: $width-desktop) {
+    padding: 0 21px 0 21px;
+    justify-content: center;
+    grid-template-columns: 416px 352px;
+    grid-template-rows: 177px 235px;
+  }
+
+  @media (max-width: $width-tablet) {
+    padding: 0 16px 0 16px;
+    grid-template-columns: 100% 0;
+    grid-template-rows: 412px 167px 279px;
+    text-align: center;
+  }
+}

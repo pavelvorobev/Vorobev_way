@@ -1,0 +1,145 @@
+.catalog__wrapper {
+  overflow-x: auto;
+
+  @media (max-width: $width-desktop) {
+    padding-left: 20px;
+  }
+}
+
+.catalog__tabs {
+  display: flex;
+  width: 900px;
+  justify-content: space-between;
+
+  @include reset-list;
+  margin-bottom: 80px;
+  border-bottom: 1px solid rgba(44, 46, 63, 0.3);
+
+  @media (max-width: $width-desktop) {
+    height: 55px;
+    margin-bottom: 33px;
+
+    overflow-scrolling: touch;
+  }
+}
+
+.catalog__tab {
+  padding: 15px 0;
+  color: rgba(44, 46, 63, 0.3);
+  @include fontMeasure(500, 20px, 24px);
+  cursor: pointer;
+
+  a {
+    padding: 15px 0;
+    color: rgba(44, 46, 63, 0.3);
+
+    &:hover {
+      color: $color-orange-hover;
+    }
+
+    &:active {
+      color: rgba($color-orange-hover, 0.7);
+    }
+  }
+
+  &--active {
+    a {
+      color: $color-orange-light;
+    }
+  }
+
+
+}
+
+.catalog__content {
+  display: none;
+  justify-content: space-between;
+
+  @media (max-width: $width-desktop) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: $width-tablet) {
+    margin-bottom: 111px  ;
+  }
+
+  &--active {
+    display: flex;
+  }
+}
+
+.catalog__about {
+
+  @media (min-width: $width-desktop) {
+    min-width: 470px;
+  }
+}
+
+.catalog__title {
+  position: relative;
+  margin-bottom: 53px;
+
+  @include fontMeasure(600, 55px, 90px);
+  color: $color-black-light;
+
+  @media (max-width: $width-desktop) {
+    margin-bottom: 20px;
+
+    @include fontMeasure(600, 30px,  45px);
+    text-align: center;
+  }
+
+  &::after {
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    content: '';
+    width: 229px;
+    height: 4px;
+    background-color: $color-orange-light;
+
+    @media (max-width: $width-desktop) {
+      display: none;
+    }
+  }
+}
+
+.catalog__description {
+  width: 370px;
+  margin-bottom: 50px;
+
+  @include fontMeasure(400, 16px, 28px);
+  color: rgba(44, 46, 63, 0.7);
+
+  @media (max-width: $width-desktop) {
+    width: 100%;
+    padding: 0 21px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+}
+
+.catalog__link {
+  display: block;
+  text-align: center;
+  width: 250px;
+  height: 75px;
+  padding: 30px 0;
+  @include fontMeasure(700, 12px, 14px);
+  box-sizing: border-box;
+
+  @media (max-width: $width-desktop) {
+    height: 50px;
+    padding: 19px 0;
+    margin: 0 auto 30px auto;
+
+    @include fontMeasure(500, 10px, 12px);
+  }
+
+  @media (max-width: $width-tablet) {
+    width: 288px;
+  }
+}

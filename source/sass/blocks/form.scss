@@ -1,0 +1,42 @@
+.form__input {
+  width: 270px;
+  height: 51px;
+  padding: 15px;
+  border: 1px solid rgba($color-black-light, 0.3);
+  box-sizing: border-box;
+
+  @include fontMeasure(400, 14px, 17px);
+  color: $color-black-dark;
+
+  @media (max-width: $width-tablet) {
+    width: 288px;
+  }
+
+  &:hover {
+    border: 1px solid rgba($color-black-light, 0.5);
+  }
+
+  &:focus {
+    outline: none;
+    border: 1px solid $color-black-light;
+  }
+
+  &::placeholder {
+    color: $color-black-dark;
+  }
+}
+
+.form__button {
+  width: 176px;
+  height: 50px;
+  margin: 0 auto;
+  border: none;
+
+  @media (max-width: $width-desktop) {
+    width: 250px;
+  }
+
+  @media (max-width: $width-tablet) {
+    width: 288px;
+  }
+}

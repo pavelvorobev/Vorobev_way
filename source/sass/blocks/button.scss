@@ -1,0 +1,23 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include fontMeasure(700, 12px, 15px);
+  color: $color-white;
+  background-color: $color-orange-light;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  &:hover {
+    background-color: $color-orange-hover;
+  }
+
+  &:active {
+    background-color: rgba($color-orange-hover, 0.9);
+  }
+
+  @media (max-width: $width-desktop) {
+    @include fontMeasure(500, 10px, 12px);
+  }
+}
