@@ -108,7 +108,7 @@
       content: '';
       width: 15px;
       height: 15px;
-      background: url('../../img/icon-arrow-right.svg') no-repeat center;
+      background: url('../img/icon-arrow-right.svg') no-repeat center;
     }
   }
 }
@@ -123,7 +123,7 @@
     width: 72px;
     height: 50px;
     padding: 0;
-    background: $color-orange-light url('../../img/icon-burger.svg') no-repeat center;
+    background: $color-orange-light url('../img/icon-burger.svg') no-repeat center;
     border: none;
   }
 
@@ -140,5 +140,5 @@
   width: 50px;
   height: 52px;
   z-index: 1;
-  background: transparent url('../../img/icon-close.svg') no-repeat center;
+  background: transparent url('../img/icon-close.svg') no-repeat center;
 }

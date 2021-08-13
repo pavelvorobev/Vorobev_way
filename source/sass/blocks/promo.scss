@@ -1,6 +1,6 @@
 .promo {
   height: 800px;
-  background: center/cover #467193 url('../../img/promo-bg.jpg') no-repeat;
+  background: center/cover #467193 url('../img/promo-bg.jpg') no-repeat;
   color: $color-white;
 
   @media (max-width: $width-desktop) {
@@ -83,7 +83,7 @@
     content: '';
     width: 25px;
     height: 25px;
-    background: url('../../img/icon-arrow-down.svg') no-repeat center;
+    background: url('../img/icon-arrow-down.svg') no-repeat center;
 
     @media (max-width: $width-desktop) {
       top: 12px;

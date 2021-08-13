@@ -510,7 +510,7 @@ a {
         content: '';
         width: 15px;
         height: 15px;
-        background: url("../../img/icon-arrow-right.svg") no-repeat center; } }
+        background: url("../img/icon-arrow-right.svg") no-repeat center; } }
 
 .main-nav__toggle {
   display: none;
@@ -522,7 +522,7 @@ a {
       width: 72px;
       height: 50px;
       padding: 0;
-      background: #fe7865 url("../../img/icon-burger.svg") no-repeat center;
+      background: #fe7865 url("../img/icon-burger.svg") no-repeat center;
       border: none; } }
   @media (max-width: 767px) {
     .main-nav__toggle {
@@ -536,11 +536,11 @@ a {
   width: 50px;
   height: 52px;
   z-index: 1;
-  background: transparent url("../../img/icon-close.svg") no-repeat center; }
+  background: transparent url("../img/icon-close.svg") no-repeat center; }
 
 .promo {
   height: 800px;
-  background: center/cover #467193 url("../../img/promo-bg.jpg") no-repeat;
+  background: center/cover #467193 url("../img/promo-bg.jpg") no-repeat;
   color: #ffffff; }
   @media (max-width: 1023px) {
     .promo {
@@ -614,7 +614,7 @@ a {
     content: '';
     width: 25px;
     height: 25px;
-    background: url("../../img/icon-arrow-down.svg") no-repeat center; }
+    background: url("../img/icon-arrow-down.svg") no-repeat center; }
     @media (max-width: 1023px) {
       .promo__link::after {
         top: 12px; } }
@@ -630,7 +630,7 @@ a {
 .places {
   padding-top: 199px;
   padding-bottom: 489px;
-  background: url("../../img/map.png") no-repeat center 1800px; }
+  background: url("../img/map.png") no-repeat center 1800px; }
   @media (max-width: 1023px) {
     .places {
       background: none;
@@ -741,14 +741,14 @@ a {
   .places__item:hover .places__overlay {
     display: flex; }
   .places__item--greece {
-    background: #467193 url("../../img/greece-bg.jpg") no-repeat 0 -110px; }
+    background: #467193 url("../img/greece-bg.jpg") no-repeat 0 -110px; }
   .places__item--albania {
-    background: #25696f url("../../img/albania-bg.jpg") no-repeat; }
+    background: #25696f url("../img/albania-bg.jpg") no-repeat; }
   .places__item--macedonia {
-    background: #c59275 url("../../img/macedonia-bg.jpg") no-repeat; }
+    background: #c59275 url("../img/macedonia-bg.jpg") no-repeat; }
   .places__item--montenegro {
     margin-left: 175px;
-    background: #72a34f url("../../img/montenegro-bg.jpg") no-repeat; }
+    background: #72a34f url("../img/montenegro-bg.jpg") no-repeat; }
     @media (max-width: 1023px) {
       .places__item--montenegro {
         margin-left: 0; } }
@@ -757,7 +757,7 @@ a {
         margin-left: 5%; } }
   .places__item--croatia {
     margin-right: 175px;
-    background: #05c7a6 url("../../img/croatia-bg.jpg") no-repeat; }
+    background: #05c7a6 url("../img/croatia-bg.jpg") no-repeat; }
     @media (max-width: 1023px) {
       .places__item--croatia {
         margin: 0 auto; } }
@@ -1005,15 +1005,15 @@ a {
         left: 50%;
         transform: translateX(-50%); } }
   .feedback__author--greece::before {
-    background: url("../../img/feedback-author-1.jpg") center; }
+    background: url("../img/feedback-author-1.jpg") center; }
   .feedback__author--albania::before {
-    background: url("../../img/feedback-author-2.jpg") center; }
+    background: url("../img/feedback-author-2.jpg") center; }
   .feedback__author--macedonia::before {
-    background: url("../../img/feedback-author-3.jpg") center; }
+    background: url("../img/feedback-author-3.jpg") center; }
   .feedback__author--montenegro::before {
-    background: url("../../img/feedback-author-4.jpg") center; }
+    background: url("../img/feedback-author-4.jpg") center; }
   .feedback__author--croatia::before {
-    background: url("../../img/feedback-author-5.jpg") center; }
+    background: url("../img/feedback-author-5.jpg") center; }
 
 .price {
   margin-top: -250px;
@@ -1074,7 +1074,7 @@ a {
     .price__card:hover .price__subtitle {
       border-color: #fe7865; }
     .price__card:hover .price__feature::before {
-      background: url("../../img/icon-price-hover.svg"); }
+      background: url("../img/icon-price-hover.svg"); }
 
 .price__title {
   display: flex;
@@ -1143,7 +1143,7 @@ a {
     content: '';
     width: 22px;
     height: 22px;
-    background: url("../../img/icon-price.svg") no-repeat center; }
+    background: url("../img/icon-price.svg") no-repeat center; }
 
 .price__link {
   position: absolute;
@@ -1537,7 +1537,7 @@ a {
   width: 728px;
   height: 444px;
   padding: 72px 60px 89px 397px;
-  background: #fBf8f8 url("../../img/popup-bg.jpg") no-repeat left;
+  background: #fBf8f8 url("../img/popup-bg.jpg") no-repeat left;
   box-sizing: border-box; }
   @media (max-width: 767px) {
     .popup__form {

@@ -1,7 +1,7 @@
 .places {
   padding-top: 199px;
   padding-bottom: 489px;
-  background: url('../../img/map.png') no-repeat center 1800px;
+  background: url('../img/map.png') no-repeat center 1800px;
 
   @media (max-width: $width-desktop) {
     background: none;
@@ -131,20 +131,20 @@
   }
 
   &--greece {
-    background: #467193 url('../../img/greece-bg.jpg') no-repeat 0 -110px;
+    background: #467193 url('../img/greece-bg.jpg') no-repeat 0 -110px;
   }
 
   &--albania {
-    background: #25696f url('../../img/albania-bg.jpg') no-repeat;
+    background: #25696f url('../img/albania-bg.jpg') no-repeat;
   }
 
   &--macedonia {
-    background: #c59275 url('../../img/macedonia-bg.jpg') no-repeat;
+    background: #c59275 url('../img/macedonia-bg.jpg') no-repeat;
   }
 
   &--montenegro {
     margin-left: 175px;
-    background: #72a34f url('../../img/montenegro-bg.jpg') no-repeat;
+    background: #72a34f url('../img/montenegro-bg.jpg') no-repeat;
 
     @media (max-width: $width-desktop) {
       margin-left: 0;
@@ -157,7 +157,7 @@
 
   &--croatia {
     margin-right: 175px;
-    background: #05c7a6 url('../../img/croatia-bg.jpg') no-repeat;
+    background: #05c7a6 url('../img/croatia-bg.jpg') no-repeat;
 
     @media (max-width: $width-desktop) {
       margin: 0 auto;
